@@ -1,0 +1,337 @@
+{
+  "events": [
+    {
+      "id": "prerna",
+      "title": "Prerna",
+      "subtitle": "Outreach & Motivation Program",
+      "dates": "02-11-2025 · 17-11-2024",
+      "slug": "prerna",
+      "description": [
+        "Purpose: To inspire students and parents by showcasing opportunities available through higher education and exposure to IIT Hyderabad’s ecosystem.",
+        "Social Impact: The event strengthens aspirations for learning and builds a bridge between rural communities and higher education institutions."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Prerna gathering"
+        },
+        {
+          "file": "2.jpg",
+          "title": "Student interaction session"
+        },
+        {
+          "file": "3.jpg",
+          "title": "Campus exposure program"
+        },
+        {
+          "file": "4.jpg",
+          "title": "STEM workshop"
+        },
+        {
+          "file": "5.jpg",
+          "title": "Cultural performance"
+        },
+        {
+          "file": "6.jpg",
+          "title": "Campus tour"
+        },
+        {
+          "file": "7.jpg",
+          "title": "Prerna gathering"
+        },
+        {
+          "file": "8.jpg",
+          "title": "Student interaction session"
+        },
+        {
+          "file": "9.jpg",
+          "title": "Campus exposure program"
+        },
+        {
+          "file": "10.jpg",
+          "title": "STEM workshop"
+        },
+        {
+          "file": "11.jpg",
+          "title": "Cultural performance"
+        },
+        {
+          "file": "12.jpg",
+          "title": "Campus tour"
+        }
+      ]
+    },
+    {
+      "id": "deeksha",
+      "title": "Deeksha",
+      "subtitle": "Academic Enrichment Program",
+      "dates": "2024",
+      "slug": "deeksha",
+      "description": [
+        "Purpose: To motivate and mentor high-performing rural students through academic and career guidance sessions at IIT Hyderabad.",
+        "Social Impact: Students gain confidence and clarity before exams, guided by IIT faculty and PRAYAS volunteers."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Orientation session"
+        },
+        {
+          "file": "2.jpg",
+          "title": "Student examination"
+        },
+        {
+          "file": "3.jpg",
+          "title": "Laboratory visit"
+        },
+        {
+          "file": "4.jpg",
+          "title": "Interactive discussion"
+        }
+      ]
+    },
+    {
+      "id": "bhavishya",
+      "title": "Bhavishya",
+      "subtitle": "IIT-H Led Parent–Student Community Interaction Program",
+      "dates": "2024",
+      "slug": "bhavishya",
+      "description": [
+        "Purpose: To motivate and mentor high-performing rural students through academic and career guidance sessions at IIT Hyderabad.",
+        "Social Impact: Students gain confidence and clarity before exams, guided by IIT faculty and PRAYAS volunteers."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Orientation session"
+        }
+      ]
+    },
+    {
+      "id": "srusti",
+      "title": "Srusti",
+      "subtitle": "Science & Innovation Exhibition",
+      "dates": "2024",
+      "slug": "srusti",
+      "description": [
+        "Purpose: To nurture scientific curiosity among students by inviting them to present creative, real-world problem-solving ideas.",
+        "Social Impact: Encourages hands-on experimentation, innovation, and confidence among participants from both government and private schools."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Science exhibition"
+        },
+        {
+          "file": "2.jpg",
+          "title": "Student innovation showcase"
+        },
+        {
+          "file": "3.jpg",
+          "title": "Judging interaction"
+        },
+        {
+          "file": "4.jpg",
+          "title": "Award ceremony"
+        },
+        {
+          "file": "5.jpg",
+          "title": "Mentorship session"
+        }
+      ]
+    },
+    {
+      "id": "orphanage-visits",
+      "title": "Orphanage Visits",
+      "subtitle": "IIT-H Led Parent–Student Community Interaction Program",
+      "dates": "2024",
+      "slug": "orphanage-visits",
+      "description": [
+        "Purpose: To extend mentorship, empathy, and educational support to children residing in orphanages near IIT Hyderabad.",
+        "Social Impact: Provides sustained educational engagement, emotional support, and celebration of special occasions with underprivileged children."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Orientation session"
+        }
+      ]
+    },
+    {
+      "id": "campus-tours",
+      "title": "Campus Tours",
+      "subtitle": "Exposure to Higher Education & Research",
+      "dates": "2024",
+      "slug": "campus-tours",
+      "description": [
+        "Purpose: To provide school students with first-hand exposure to the academic, research, and residential environment of IIT Hyderabad, helping them visualize higher education pathways and opportunities.",
+        "Social Impact: Campus tours demystify higher education institutions, inspire students to aspire for advanced studies, and build early familiarity with science, technology, and campus life. For many participants, this is their first visit to a premier academic institution, which significantly enhances motivation, confidence, and long-term educational aspirations."
+      ],
+      "images": [
+        {
+          "file": "1.jpg",
+          "title": "Orientation session"
+        }
+      ]
+    }
+  ],
+  "newsItems": [
+    {
+      "title": "Outreach to villages during the pandemic under Unnat Bharat Abhiyan",
+      "date": "2020-05-07",
+      "source": "IIT Hyderabad Press Release",
+      "link": "https://pr.iith.ac.in/pressrelease/Press%20Release%20-%20IIT%20Hyderabad%20supports%20villages%20adopted%20under%20Unnat%20Bharat%20Abhiyan%20with%20COVID-19-related%20activities%20&%20preparedness-07-05-2020.pdf"
+    },
+    {
+      "title": "IIT Hyderabad Inaugurates ‘Skill Development Centre’ to Empower and Upskill Rural Communities",
+      "date": "2025-10-31",
+      "source": "IIT Hyderabad Press Release",
+      "link": "https://pr.iith.ac.in/pressrelease/SDC1.pdf"
+    },
+    {
+      "title": "IIT Hyderabad’s new skill development centre to empower rural youth through innovation and industry-ready training",
+      "date": "2025-11-06",
+      "source": "Times of India",
+      "link": "https://timesofindia.indiatimes.com/city/mumbai/iit-hyderabads-new-skill-development-centre-to-empower-rural-youth-through-innovation-and-industry-ready-training/articleshow/125128984.cms"
+    },
+    {
+      "title": "IIT Hyderabad takes Govt school students on institute tour as part of Prerna-2025",
+      "date": "2025-11-24",
+      "source": "Telangana Today",
+      "link": "https://telanganatoday.com/iit-hyderabad-takes-govt-school-students-on-institute-tour-as-part-of-prerana-2025"
+    },
+    {
+      "title": "IIT Hyderabad’s RDC–Prayas hosts ‘Prerna 2025’ to inspire rural students and strengthen community engagement",
+      "date": "2025-11-24",
+      "source": "IIT Hyderabad Press Release",
+      "link": "https://pr.iith.ac.in/pressrelease/RDCPrerna.pdf"
+    }
+  ],
+  "support": [
+    {
+      "title": "Unnat Bharat Abhiyan",
+      "desc": "Engagement with adopted villages to address development challenges.",
+      "img": "/images/support/uba.png",
+      "link": "https://people.iith.ac.in/uba/"
+    },
+    {
+      "title": "National Service Scheme",
+      "desc": "Encouraging students to serve society and build responsibility.",
+      "img": "/images/support/nss.jpg",
+      "link": "https://nss.iith.ac.in/"
+    },
+    {
+      "title": "Prayas",
+      "desc": "Student-led initiative empowering rural children through education.",
+      "img": "/images/support/prayas.png",
+      "link": "https://prayas.rdc.iith.ac.in/"
+    }
+  ],
+  "members": {
+    "committee": [
+      {
+        "name": "Dr. Prem Pal",
+        "designation": "Founding Chairman, Professor",
+        "info": "Department of Physics",
+        "email": "prem@iith.ac.in",
+        "linkedin": "",
+        "website": "https://people.iith.ac.in/memslab/prem.html",
+        "image": "/images/members/1.png"
+      },
+      {
+        "name": "Dr. G. Ramesh",
+        "designation": "Former Chairman, Professor",
+        "info": "Department of Mathematics",
+        "email": "rameshg@math.iith.ac.in",
+        "linkedin": "",
+        "website": "https://people.iith.ac.in/rameshg/",
+        "image": "/images/members/2.jpg"
+      },
+      {
+        "name": "Dr. Satish Kr. Regonda",
+        "designation": "Chairman, Associate Professor",
+        "info": "Civil Engineering & Climate Change",
+        "email": "satishr@ce.iith.ac.in",
+        "linkedin": "https://www.linkedin.com/in/satish-regonda-3a08a115",
+        "website": "https://sites.google.com/iith.ac.in/satishregonda/home",
+        "image": "/images/members/3.png"
+      }
+    ],
+    "professors": [
+      {
+        "name": "Prof. Subrahmanyam Ch.",
+        "designation": "Professor (CHE)",
+        "info": "Leads MSME funding support",
+        "email": "csubbu@chy.iith.ac.in",
+        "linkedin": "",
+        "website": "https://iith.ac.in/chy/csubbu/",
+        "image": "/images/members/4.jpg"
+      },
+      {
+        "name": "Dr. Debraj Bhattacharyya",
+        "designation": "Professor (CE)",
+        "info": "Waste management support in Indrakaran",
+        "email": "debrajb@ce.iith.ac.in",
+        "linkedin": "https://www.linkedin.com/in/debraj-bhattacharyya-9286a115",
+        "website": "https://people.iith.ac.in/debrajb/",
+        "image": "/images/members/5.png"
+      },
+      {
+        "name": "Dr. Aravind N.R.",
+        "designation": "Associate Professor (CSE)",
+        "info": "Teaching school children under RDC outreach",
+        "email": "aravind@cse.iith.ac.in",
+        "linkedin": "https://www.linkedin.com/in/aravind-n-r-7998b390",
+        "website": "https://people.iith.ac.in/aravind/",
+        "image": "/images/members/6.jpg"
+      },
+      {
+        "name": "Dr. Prasad S Onkar",
+        "designation": "Associate Professor (Design)",
+        "info": "Associated with Unnat Bharat Abhiyan",
+        "email": "psonkar@des.iith.ac.in",
+        "linkedin": "",
+        "website": "https://design.iith.ac.in/iitdesign_peoples/prasad-onkar-phd/",
+        "image": "/images/members/7.jpg"
+      },
+      {
+        "name": "Dr. Himabindu Allaka",
+        "designation": "Assistant Professor (MAE)",
+        "info": "School outreach and engagement activities",
+        "email": "himabindu.allaka@mae.iith.ac.in",
+        "linkedin": "",
+        "website": "https://www.iith.ac.in/mae/himabindu.allaka/",
+        "image": "/images/members/8.jpg"
+      },
+      {
+        "name": "Dr. Rajesh Ittamalla",
+        "designation": "Assistant Professor (EM)",
+        "info": "Entrepreneurship & RDC support",
+        "email": "rajeshittamalla@em.iith.ac.in",
+        "linkedin": "",
+        "website": "https://iith.ac.in/em/rajeshittamalla/",
+        "image": "/images/members/9.jpg"
+      },
+      {
+        "name": "Dr. Shuhita Bhattacharjee",
+        "designation": "Assistant Professor (LA)",
+        "info": "Awareness and sensitization support",
+        "email": "shuhita@la.iith.ac.in",
+        "linkedin": "",
+        "website": "https://www.shuhitabhattacharjee.com/",
+        "image": "/images/members/10.jpg"
+      }
+    ],
+    "staff": [
+      {
+        "name": "Meenu Agrawal",
+        "designation": "RDC Project Manager",
+        "info": "Managing RDC projects & support",
+        "email": "meenu.agrawal@prjt.ce.iith.ac.in",
+        "linkedin": "",
+        "website": "",
+        "image": "/images/members/11.jpg"
+      }
+    ]
+  }
+}
