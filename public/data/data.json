@@ -164,8 +164,8 @@
       "dates": "2024",
       "slug": "campus-tours",
       "description": [
-        "Purpose: To provide school students with first-hand exposure to the academic, research, and residential environment of IIT Hyderabad, helping them visualize higher education pathways and opportunities.",
-        "Social Impact: Campus tours demystify higher education institutions, inspire students to aspire for advanced studies, and build early familiarity with science, technology, and campus life. For many participants, this is their first visit to a premier academic institution, which significantly enhances motivation, confidence, and long-term educational aspirations."
+        "Purpose: To provide school students with first-hand exposure to the academic, research & residential environment of IIT-H, helping them visualize higher education pathways.",
+        "Social Impact: Experiencing a premier institute helps demystify higher education by showing students what academic & campus life truly look like. It inspires curiosity & confidence in STEM fields & encourages long-term educational goals."
       ],
       "images": [
         {
@@ -228,35 +228,15 @@
     }
   ],
   "members": {
-    "committee": [
-      {
-        "name": "Dr. Prem Pal",
-        "designation": "Founding Chairman, Professor",
-        "info": "Department of Physics",
-        "email": "prem@iith.ac.in",
-        "linkedin": "",
-        "website": "https://people.iith.ac.in/memslab/prem.html",
-        "image": "/images/members/1.png"
-      },
-      {
-        "name": "Dr. G. Ramesh",
-        "designation": "Former Chairman, Professor",
-        "info": "Department of Mathematics",
-        "email": "rameshg@math.iith.ac.in",
-        "linkedin": "",
-        "website": "https://people.iith.ac.in/rameshg/",
-        "image": "/images/members/2.jpg"
-      },
-      {
-        "name": "Dr. Satish Kr. Regonda",
-        "designation": "Chairman, Associate Professor",
-        "info": "Civil Engineering & Climate Change",
-        "email": "satishr@ce.iith.ac.in",
-        "linkedin": "https://www.linkedin.com/in/satish-regonda-3a08a115",
-        "website": "https://sites.google.com/iith.ac.in/satishregonda/home",
-        "image": "/images/members/3.png"
-      }
-    ],
+    "chairman": {
+      "name": "Dr. Satish Kr. Regonda",
+      "designation": "Chairman, Associate Professor",
+      "info": "Civil Engineering & Climate Change",
+      "email": "satishr@ce.iith.ac.in",
+      "linkedin": "https://www.linkedin.com/in/satish-regonda-3a08a115",
+      "website": "https://sites.google.com/iith.ac.in/satishregonda/home",
+      "image": "/images/members/3.png"
+    },
     "professors": [
       {
         "name": "Prof. Subrahmanyam Ch.",
@@ -331,6 +311,26 @@
         "linkedin": "",
         "website": "",
         "image": "/images/members/11.jpg"
+      }
+    ],
+    "past-chairpersons": [
+      {
+        "name": "Dr. Prem Pal",
+        "designation": "Founding Chairman, Professor",
+        "info": "Department of Physics",
+        "email": "prem@iith.ac.in",
+        "linkedin": "",
+        "website": "https://people.iith.ac.in/memslab/prem.html",
+        "image": "/images/members/1.png"
+      },
+      {
+        "name": "Dr. G. Ramesh",
+        "designation": "Former Chairman, Professor",
+        "info": "Department of Mathematics",
+        "email": "rameshg@math.iith.ac.in",
+        "linkedin": "",
+        "website": "https://people.iith.ac.in/rameshg/",
+        "image": "/images/members/2.jpg"
       }
     ]
   }

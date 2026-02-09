@@ -65,23 +65,23 @@ const Projects = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="min-h-screen bg-gray-100 py-8 sm:py-10 lg:py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Projects & Initiatives
           </h1>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-blue-600 mx-auto mb-3 sm:mb-4"></div>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             About RDC projects, and rural upliftment initiatives
           </p>
         </div>
 
         {/* PROJECTS */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
+        <section className="mb-12 sm:mb-14 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 text-center">
             Projects
           </h2>
 
@@ -89,19 +89,19 @@ const Projects = () => {
             <table className="w-full border border-gray-300 bg-white text-gray-800">
               <thead className="bg-blue-100 text-gray-900">
                 <tr>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Sl. No.
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Title of the Project
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     PI&apos;s Name
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Co-PIs
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Duration
                   </th>
                 </tr>
@@ -109,19 +109,19 @@ const Projects = () => {
               <tbody>
                 {projects.map(project => (
                   <tr key={project.sl} className="hover:bg-gray-50">
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {project.sl}
                     </td>
-                    <td className="border border-gray-300 p-3 font-medium">
+                    <td className="border border-gray-300 p-2 sm:p-3 font-medium text-sm sm:text-base">
                       {project.title}
                     </td>
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {project.pi}
                     </td>
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {project.copis}
                     </td>
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {project.duration}
                     </td>
                   </tr>
@@ -134,7 +134,7 @@ const Projects = () => {
 
         {/* INITIATIVES */}
         <section>
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6 text-center">
+          <h2 className="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4 sm:mb-6 text-center">
             Initiatives
           </h2>
 
@@ -142,27 +142,27 @@ const Projects = () => {
             <table className="w-full border border-gray-300 bg-white text-gray-800">
               <thead className="bg-blue-100 text-gray-900">
                 <tr>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Sl. No.
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
                     Title
                   </th>
-                  <th className="border border-gray-300 p-3 text-left">
-                    About the Project
+                  <th className="border border-gray-300 p-2 sm:p-3 text-left text-sm sm:text-base">
+                    About the Initiative
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {initiatives.map(item => (
                   <tr key={item.sl} className="hover:bg-gray-50">
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {item.sl}
                     </td>
-                    <td className="border border-gray-300 p-3 font-medium">
+                    <td className="border border-gray-300 p-2 sm:p-3 font-medium text-sm sm:text-base">
                       {item.title}
                     </td>
-                    <td className="border border-gray-300 p-3">
+                    <td className="border border-gray-300 p-2 sm:p-3 text-sm sm:text-base">
                       {item.about || '-'}
                     </td>
                   </tr>

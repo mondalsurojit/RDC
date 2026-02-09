@@ -8,7 +8,7 @@ import {
   ChevronRight,
 } from 'lucide-react'
 
-const ITEMS_PER_PAGE = 50
+const ITEMS_PER_PAGE = 30
 const SWIPE_THRESHOLD = 50
 
 const EVENT_COLORS = {
@@ -16,6 +16,39 @@ const EVENT_COLORS = {
   deeksha: 'bg-green-100 text-green-700',
   srusti: 'bg-purple-100 text-purple-700',
 }
+
+// Sort Menu Component (DRY - reused for mobile and desktop)
+const SortMenu = ({ showSortMenu, setShowSortMenu, setSortAsc, sortRef }) => (
+  <div ref={sortRef} className="relative">
+    <button
+      onClick={() => setShowSortMenu(s => !s)}
+      className="p-2 rounded-xl border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 cursor-pointer flex items-center justify-center">
+      <ArrowDownUp className="w-4 h-4 lg:w-5 lg:h-5" />
+    </button>
+
+    {showSortMenu && (
+      <div className="absolute right-0 mt-2 w-44 bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg z-10 overflow-hidden">
+        <button
+          onClick={() => {
+            setSortAsc(false)
+            setShowSortMenu(false)
+          }}
+          className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left">
+          Recent to Old
+        </button>
+
+        <button
+          onClick={() => {
+            setSortAsc(true)
+            setShowSortMenu(false)
+          }}
+          className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left">
+          Old to Recent
+        </button>
+      </div>
+    )}
+  </div>
+)
 
 const Gallery = () => {
   const [events, setEvents] = useState([])
@@ -132,86 +165,99 @@ const Gallery = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* HEADER */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Gallery
           </h1>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-blue-600 mx-auto mb-3 sm:mb-4"></div>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Moments captured from RDC events and outreach programs
           </p>
         </div>
 
-        {/* CONTROLS */}
-        <div className="flex flex-col lg:flex-row items-stretch gap-4 mb-12">
+        {/* CONTROLS*/}
+        <div className="sticky top-22 z-10 bg-gray-50/60 backdrop-blur-sm flex justify-center p-2 rounded-xl border border-gray-100">
+          <div className="flex lg:hidden flex-col items-center gap-3 w-full max-w-md">
+            {/* SEARCH */}
+            <div className="relative w-full">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4" />
+              <input
+                type="text"
+                placeholder="Search images..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                className="w-full pl-10 pr-3 py-2 rounded-xl border border-gray-300 bg-white text-gray-800 text-sm focus:ring-1 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
 
-          {/* SEARCH */}
-          <div className="relative w-full lg:w-1/2">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-            <input
-              type="text"
-              placeholder="Search images by title..."
-              value={search}
-              onChange={e => setSearch(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-800 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+            {/* FILTER + SORT */}
+            <div className="flex items-center gap-3 w-full">
+              <select
+                value={filter}
+                onChange={e => setFilter(e.target.value)}
+                className="flex-1 px-3 py-2 rounded-xl border border-gray-300 bg-white text-gray-800 text-sm font-medium focus:ring-1 focus:ring-blue-500 focus:outline-none">
+                <option value="all">All Events</option>
+                <option value="prerna">Prerna</option>
+                <option value="deeksha">Deeksha</option>
+                <option value="srusti">Srusti</option>
+              </select>
+
+              <SortMenu 
+                showSortMenu={showSortMenu}
+                setShowSortMenu={setShowSortMenu}
+                setSortAsc={setSortAsc}
+                sortRef={sortRef}
+              />
+            </div>
+          </div>
+
+          {/* DESKTOP LAYOUT */}
+          <div className="hidden lg:flex flex-row items-stretch gap-4">
+            {/* SEARCH */}
+            <div className="relative w-96">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <input
+                type="text"
+                placeholder="Search images by title..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                className="w-full pl-12 pr-4 py-2 rounded-xl border border-gray-300 bg-white text-gray-800 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            {/* FILTER */}
+            <select
+              value={filter}
+              onChange={e => setFilter(e.target.value)}
+              className="w-56 px-4 py-2 rounded-xl border border-gray-300 bg-white text-gray-800 font-medium focus:ring-1 focus:ring-blue-500 focus:outline-none">
+              <option value="all">All Events</option>
+              <option value="prerna">Prerna</option>
+              <option value="deeksha">Deeksha</option>
+              <option value="srusti">Srusti</option>
+            </select>
+
+            {/* SORT */}
+            <SortMenu 
+              showSortMenu={showSortMenu}
+              setShowSortMenu={setShowSortMenu}
+              setSortAsc={setSortAsc}
+              sortRef={sortRef}
             />
           </div>
 
-          {/* FILTER */}
-          <select
-            value={filter}
-            onChange={e => setFilter(e.target.value)}
-            className="w-full lg:w-1/4 px-4 py-3 rounded-xl border border-gray-300 bg-white text-gray-800 font-medium focus:ring-1 focus:ring-blue-500 focus:outline-none">
-            <option value="all">All Events</option>
-            <option value="prerna">Prerna</option>
-            <option value="deeksha">Deeksha</option>
-            <option value="srusti">Srusti</option>
-          </select>
-
-          {/* SORT */}
-          <div ref={sortRef} className="relative">
-            <button
-              onClick={() => setShowSortMenu(s => !s)}
-              className="p-3 rounded-xl border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 cursor-pointer">
-              <ArrowDownUp className="w-5 h-5" />
-            </button>
-
-            {showSortMenu && (
-              <div className="absolute right-0 mt-2 w-44 bg-white text-gray-800 border border-gray-300 rounded-xl shadow-lg z-10 overflow-hidden">
-                <button
-                  onClick={() => {
-                    setSortAsc(false)
-                    setShowSortMenu(false)
-                  }}
-                  className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left">
-                  Recent to Old
-                </button>
-
-                <button
-                  onClick={() => {
-                    setSortAsc(true)
-                    setShowSortMenu(false)
-                  }}
-                  className="block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 text-left">
-                  Old to Recent
-                </button>
-              </div>
-            )}
-
-          </div>
         </div>
 
         {/* ===== GALLERY ===== */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 sm:gap-6 pt-8 sm:pt-10 lg:pt-12 ">
           {paginatedImages.map((img, idx) => (
             <figure
               key={idx}
               onClick={() => setLightboxIndex((page - 1) * ITEMS_PER_PAGE + idx)}
-              className="mb-6 break-inside-avoid cursor-pointer overflow-hidden rounded-xl bg-white shadow hover:shadow-lg transition"
+              className="mb-4 sm:mb-6 break-inside-avoid cursor-pointer overflow-hidden rounded-xl bg-white shadow hover:shadow-lg transition"
             >
               <div className="overflow-hidden">
                 <img
@@ -226,8 +272,8 @@ const Gallery = () => {
                 />
               </div>
 
-              <figcaption className="p-3 space-y-1">
-                <p className="text-sm font-semibold text-gray-800">
+              <figcaption className="p-2.5 sm:p-3 space-y-1">
+                <p className="text-xs sm:text-sm font-semibold text-gray-800">
                   {img.title}
                 </p>
                 <span
@@ -249,50 +295,54 @@ const Gallery = () => {
           onTouchMove={e => (touchEndX.current = e.touches[0].clientX)}
           onTouchEnd={handleTouchEnd}
         >
+          {/* CLOSE BUTTON */}
           <button
-            className="absolute top-6 right-6 text-white cursor-pointer"
+            className="absolute top-4 sm:top-6 right-4 sm:right-6 text-white cursor-pointer z-10"
             onClick={() => setLightboxIndex(null)}
           >
-            <X size={28} />
+            <X className="w-6 h-6 sm:w-7 sm:h-7" />
           </button>
 
+          {/* PREVIOUS BUTTON */}
           <button
-            className="absolute left-6 text-white cursor-pointer"
+            className="absolute left-2 sm:left-6 text-white cursor-pointer z-10"
             onClick={() =>
               setLightboxIndex(
                 i => (i - 1 + processedImages.length) % processedImages.length
               )
             }
           >
-            <ChevronLeft size={36} />
+            <ChevronLeft className="w-8 h-8 sm:w-9 sm:h-9" />
           </button>
 
-          <div className="text-center px-4">
+          {/* IMAGE & INFO */}
+          <div className="text-center px-4 sm:px-6">
             <img
               src={`/images/events/${processedImages[lightboxIndex].slug}/${processedImages[lightboxIndex].file}`}
               alt={processedImages[lightboxIndex].title}
-              className="max-h-[80vh] max-w-[92vw] object-contain mx-auto"
+              className="max-h-[70vh] sm:max-h-[80vh] max-w-[90vw] sm:max-w-[92vw] object-contain mx-auto"
             />
 
-            <div className="mt-5 flex justify-center items-center gap-3 text-white">
+            <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-3 text-white">
               <span
                 className={`text-xs px-3 py-1 rounded-full ${EVENT_COLORS[processedImages[lightboxIndex].slug]}`}
               >
                 {processedImages[lightboxIndex].eventTitle}
               </span>
-              <span className="text-base font-medium opacity-90">
+              <span className="text-sm sm:text-base font-medium opacity-90">
                 {processedImages[lightboxIndex].title}
               </span>
             </div>
           </div>
 
+          {/* NEXT BUTTON */}
           <button
-            className="absolute right-6 text-white cursor-pointer"
+            className="absolute right-2 sm:right-6 text-white cursor-pointer z-10"
             onClick={() =>
               setLightboxIndex(i => (i + 1) % processedImages.length)
             }
           >
-            <ChevronRight size={36} />
+            <ChevronRight className="w-8 h-8 sm:w-9 sm:h-9" />
           </button>
         </div>
       )}

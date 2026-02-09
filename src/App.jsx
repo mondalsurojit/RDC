@@ -12,7 +12,7 @@ import Contact from './pages/Contact.page';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen max-w-screen-2xl overflow-hidden mx-auto bg-white">
       <Header />
       <main className="pt-20">
         <Routes>

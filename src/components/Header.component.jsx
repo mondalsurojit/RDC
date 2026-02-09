@@ -30,12 +30,13 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-              RDC
+            <div className="w-12 h-12 overflow-hidden flex items-center justify-center bg-transparent">
+              <img src="/iith_logo.png" alt="IIT Hyderabad Logo"
+                className="w-full h-full object-contain" />
             </div>
             <div>
-              <div className="font-bold text-gray-900 text-lg">Rural Development Centre</div>
-              <div className="text-sm text-gray-600">IIT Hyderabad</div>
+              <div className="font-semibold text-indigo-900 text-lg tracking-tight">Rural Development Centre</div>
+              <div className="text-sm text-indigo-900">IIT Hyderabad</div>
             </div>
           </Link>
 
@@ -46,8 +47,8 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={`px-4 py-2 rounded-lg font-medium transition-all ${isActive(item.path)
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
                   }`}
               >
                 {item.name}
@@ -58,7 +59,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100"
+            className="text-gray-900 md:hidden p-2 rounded-lg hover:bg-gray-100"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -75,8 +76,8 @@ const Header = () => {
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg font-medium transition-all ${isActive(item.path)
-                    ? 'bg-blue-600 text-white'
-                    : 'text-gray-700 hover:bg-gray-100'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 hover:bg-gray-100'
                   }`}
               >
                 <item.icon className="w-5 h-5" />
