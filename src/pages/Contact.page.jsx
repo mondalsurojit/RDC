@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* HEADER */}
         <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">Contact Us</h1>
@@ -31,7 +31,7 @@ const Contact = () => {
         {/* CONTACT INFO & MAP SECTION */}
         <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10 mb-8 sm:mb-10 lg:mb-12">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
-            
+
             {/* Left Column - Contact Info */}
             <div className="space-y-5 sm:space-y-6">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
@@ -108,7 +108,7 @@ const Contact = () => {
         {/* CAMPUS TOUR REGISTRATION SECTION */}
         <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 lg:p-10">
           <div className="max-w-4xl mx-auto text-center">
-            
+
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
               RDC's Outreach and Campus Visit Program
             </h2>
@@ -117,18 +117,18 @@ const Contact = () => {
               <p>
                 RDC has adopted five villages in Kowdipally and Kandi mandals in the erstwhile Medak district to expand its outreach and impact. As part of its initiatives, RDC actively supports schools, colleges, and welfare communities across Telangana and the neighboring states of Maharashtra and Karnataka.
               </p>
-              
+
               <p>
                 To inspire young minds, RDC provides students with opportunities to explore the IIT Hyderabad campus. These visits offer exposure to advanced technology, high-end laboratories, and the Knowledge Resource Center, fostering curiosity and encouraging students toward higher education and innovation.
               </p>
-              
+
               <p className="font-semibold text-gray-900">
                 Join us in shaping the future by experiencing the world of cutting-edge research and learning at IIT Hyderabad!
               </p>
             </div>
 
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfEJG6LWi0vqJt9rqsnSoOBQ-NV7srM-1dgZy9llVcsF-CgTg/viewform"
+              href="https://www.iith.ac.in/visit/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white text-sm sm:text-base font-semibold rounded-full shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all duration-300"

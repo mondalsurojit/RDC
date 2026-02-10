@@ -252,7 +252,7 @@ const Gallery = () => {
         </div>
 
         {/* ===== GALLERY ===== */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 sm:gap-6 pt-8 sm:pt-10 lg:pt-12 ">
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 sm:gap-6 pt-8 sm:pt-10 lg:pt-12">
           {paginatedImages.map((img, idx) => (
             <figure
               key={idx}

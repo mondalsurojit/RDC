@@ -84,8 +84,7 @@ const Home = () => {
                         </p>
 
                         <p className="text-sm sm:text-base lg:text-lg text-blue-200 max-w-2xl mx-auto mb-8 sm:mb-12 px-4">
-                            Bridging innovation & rural development through cutting-edge research
-                            & sustainable solutions
+                            Transforming rural India through innovation and sustainable development
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

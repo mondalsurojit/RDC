@@ -7,12 +7,11 @@ import Members from './pages/Members.page';
 import Projects from './pages/Projects.page';
 import Events from './pages/Events.page';
 import Gallery from './pages/Gallery.page';
-// import Tours from './pages/Tours.page';
 import Contact from './pages/Contact.page';
 
 const App = () => {
   return (
-    <div className="min-h-screen max-w-screen-2xl overflow-hidden mx-auto bg-white">
+    <div className="min-h-screen max-w-screen-2xl mx-auto bg-white">
       <Header />
       <main className="pt-20">
         <Routes>
